@@ -2,6 +2,8 @@
     "files.associations": {
         "*.cpp": "cpp",
         "vector": "cpp",
-        "set": "cpp"
+        "set": "cpp",
+        "complex": "cpp",
+        "valarray": "cpp"
     }
 }
