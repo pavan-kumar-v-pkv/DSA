@@ -4,6 +4,7 @@
         "vector": "cpp",
         "set": "cpp",
         "complex": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "list": "cpp"
     }
 }
