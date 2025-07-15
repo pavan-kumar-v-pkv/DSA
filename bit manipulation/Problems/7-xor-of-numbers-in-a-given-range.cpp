@@ -30,3 +30,19 @@ int xorOfRangeOptimized(int l, int r) {
     // xor(0 to r) ^ xor(0 to l-1)
     return xorFromZeroToN(r) ^ xorFromZeroToN(l - 1);
 }
+
+int main() {
+    int l, r;
+    cout << "Enter the range (L R): ";
+    cin >> l >> r;
+
+    // Using brute force approach
+    int resultBruteForce = xorOfRange(l, r);
+    cout << "XOR of range [" << l << ", " << r << "] using brute force: " << resultBruteForce << endl;
+
+    // Using optimized approach
+    int resultOptimized = xorOfRangeOptimized(l, r);
+    cout << "XOR of range [" << l << ", " << r << "] using optimized method: " << resultOptimized << endl;
+
+    return 0;
+}
