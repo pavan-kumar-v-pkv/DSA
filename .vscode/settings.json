@@ -5,6 +5,33 @@
         "set": "cpp",
         "complex": "cpp",
         "valarray": "cpp",
-        "list": "cpp"
-    }
+        "list": "cpp",
+        "__bit_reference": "cpp",
+        "__hash_table": "cpp",
+        "__split_buffer": "cpp",
+        "__tree": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "forward_list": "cpp",
+        "initializer_list": "cpp",
+        "map": "cpp",
+        "regex": "cpp",
+        "span": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "iostream": "cpp"
+    },
+    "editor.quickSuggestions": {
+        "other": "off",
+        "comments": "on",
+        "strings": "on"
+    },
+    "editor.inlineSuggest.experimental.triggerCommandOnProviderChange": false,
+    "terminal.integrated.suggest.suggestOnTriggerCharacters": true,
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.inlineSuggest.edits.allowCodeShifting": "never",
+    "editor.inlineSuggest.edits.renderSideBySide": "never",
+    "editor.inlineSuggest.enabled": false
 }
