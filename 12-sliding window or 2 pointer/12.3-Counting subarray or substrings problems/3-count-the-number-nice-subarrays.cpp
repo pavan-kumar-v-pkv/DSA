@@ -20,9 +20,6 @@ using namespace std;
 
 // Space Complexity: O(1). There is no extra space being used.
 
-
-
-
 int helper(vector<int>& nums, int goal){
     if(goal < 0) return 0;
     int l = 0, r = 0;
