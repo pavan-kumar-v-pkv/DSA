@@ -17,7 +17,7 @@ private:
     /* Helper function to make DFS calls while 
     identifying articulation points */
     void dfs(int node, int parent, vector<int> &vis, vector<int> &tin,
-             vector<int> &low, vector<int> &mark, vector<int>adj[]) {
+             vector<int> &low, vector<int> &mark, vector<vector<int>>& adj) {
 
         // Mark the node as visited
         vis[node] = 1;
@@ -81,7 +81,7 @@ public:
 
     /* Function to determine the articulation 
     points in the given graph */
-    vector<int> articulationPoints(int n, vector<int>adj[]) {
+    vector<int> articulationPoints(int n, vector<vector<int>>& adj) {
         
         // Visited array 
         vector<int> vis(n, 0);
@@ -130,7 +130,7 @@ public:
 int main() {
     int V = 7;
     // Converting graph in adjacency list
-    vector<int> adj[V] = {
+    vector<vector<int>> adj = {
         {1,2,3},
         {0},
         {0,3,4,5},
