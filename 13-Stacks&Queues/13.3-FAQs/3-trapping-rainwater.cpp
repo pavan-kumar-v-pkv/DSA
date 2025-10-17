@@ -14,7 +14,7 @@ vector<int> findPrefixMax(vector<int>& arr, int n){
     vector<int> prefixMax(n);
     prefixMax[0] = arr[0];
 
-    for(int i=0;i<n;i++){
+    for(int i=1;i<n;i++){
         prefixMax[i] = max(prefixMax[i-1], arr[i]);
     }
     return prefixMax;
@@ -32,7 +32,7 @@ int trap(vector<int>& height){
     int n = height.size();
     // to store the total trapped rainwater
     int total = 0;
-    // calcaulate prefix maximum array and suffix maximum array
+    // calculate prefix maximum array and suffix maximum array
     vector<int> leftMax = findPrefixMax(height, n);
     vector<int> rightMax = findSuffixMax(height, n);
 
